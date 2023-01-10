@@ -98,5 +98,28 @@ var a = {
         },
     };
 
+// console.log(isObject(a));
+// // console.log(typeof a); // object
 
-typeof a; // object
+// // for (const [key, value] of Object.entries(givenObject)) {
+// //     console.log(`${key}: ${value}`);
+// // };
+
+// function isObject(objValue) {
+//     return objValue && typeof objValue === 'object' && objValue.constructor === Object;
+// }
+
+const object = { a: 1, b: 2, c: 3 };
+
+// for (const property in object) {
+//     console.log(`${property}: ${object[property]}`);
+// }
+
+// Checking if the object contains a value or not
+// Object.values return an array of values of the object .includes() checks if the array contains the value or not
+if (Object.values(object).includes(3)){
+    console.log('yes');
+}
+else {
+    console.log('no');
+}
