@@ -109,7 +109,7 @@
 // var arr = [0, null, undefined, 1, -1, false, true, [], {}, ''];
 
 //  Counting Number of 1's in an array
-var arr = [1,0,0,1,1,1,1,1,1,1,1,0,0,0,0]
+var arr = [1,123,22,31,4,57,8,3,1,23,22,100,1001,1110100101,123123,098123,0,0,1,1,1,1,1,1,1,1,0,0,0,0]
 var count = 0;
 
 for (let i = 0; i < arr.length; i++){
