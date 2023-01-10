@@ -1,12 +1,5 @@
-// two inputs 
-// one for model 
-// one for brand
 
 // For Input 
-
-var modelInput = prompt("Enter Model");
-var brandInput = prompt("Enter Brand");
-
 // For Output
 var a = {
     mobiles: {
