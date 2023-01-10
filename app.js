@@ -97,3 +97,6 @@ var a = {
         },
         },
     };
+
+
+typeof a; // object
