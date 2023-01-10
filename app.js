@@ -1,24 +1,21 @@
-
-// For Input 
-// For Output
 var a = {
-    mobiles: {
+        mobiles: {
         samsung: {
-        a30: {
+            a30: {
             name: "a30",
             ram: "4gb",
             rom: "64gb",
             camera: "50px",
             price: 2000,
-        },
-        note10: {
+            },
+            note10: {
             name: "note10",
             ram: "6gb",
             rom: "128gb",
             camera: "50px",
             price: 4000,
             },
-        s10: {
+            s10: {
             name: "s10",
             ram: "3gb",
             rom: "128gb",
@@ -27,7 +24,7 @@ var a = {
             },
         },
         iphone: {
-        iphone4: {
+            iphone4: {
             name: "iphone4",
             ram: "4gb",
             rom: "64gb",
@@ -98,25 +95,15 @@ var a = {
         },
     };
 
-// Checking if the object contains a value or not
-// Object.values return an array of values of the object .includes() checks if the array contains the value or not
+    // console.log(a.mobiles[][]);
 
-// const object = { a: 1, b: 2, c: 3 };
+    var brand = document.getElementById("brand");
+    var pName = document.getElementById("name");
 
-// if (Object.values(object).includes(3)){
-//     console.log('yes');
-// }
-// else {
-//     console.log('no');
-// }
+function search(){
+    var obj = a.mobiles[brand.value][pName.value]
+console.log(obj);
 
-
-var brand = document.getElementById("brand");
-console.log(brand);
-var model = document.getElementById("model");
-console.log(model);
-
-function searchThroughObject(array_object){
-    var obj = a.mobiles[brand.value][model.value];
-    return obj;
 }
+
+
