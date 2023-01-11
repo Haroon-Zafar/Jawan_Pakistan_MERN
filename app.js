@@ -156,11 +156,40 @@ let firstVariable = 5;
 let secondVariable = firstVariable;
 // both variables are independent of each other
 
-console.log(firstVariable); // 5
-console.log(secondVariable); // 5
+// console.log(firstVariable); // 5
+// console.log(secondVariable); // 5
 
-secondVariable = firstVariable + 5;
+// secondVariable = firstVariable + 5;
 
-console.log(firstVariable); // 5
-console.log(secondVariable); // 10
+// console.log(firstVariable); // 5
+// console.log(secondVariable); // 10
+
+
+// PASS BY REFERENCE EXAMPLE 
+
+let obj1 = {
+    name: "Ali",
+    password: "123"
+}
+
+// obj1's value is passed into obj2
+
+let obj2 = obj1;
+
+// console.log(obj1); // {name: "Ali", password: "123"}
+// console.log(obj2); // {name: "Ali", password: "123"}
+
+// If we want to change the password using obj2
+
+obj2.password = "easypeasy";
+
+console.log(obj1); // {name: "Ali", password: "easypeasy"}
+console.log(obj2); // {name: "Ali", password: "easypeasy"}
+
+// Both obj1 and obj2 are changed because they are passed by reference
+// Object is a container which holds the data in key value pairs
+// obj1 is a reference 
+// obj2 is another reference 
+// if we change the contents of the container using any of the reference it will effect all the references accessing the contents of that container. 
+
 
