@@ -108,16 +108,34 @@
 
 // var arr = [0, null, undefined, 1, -1, false, true, [], {}, ''];
 
-//  Counting Number of 1's in an array
-var arr = [1,123,22,31,4,57,8,3,1,23,22,100,1001,1110100101,123123,098123,0,0,1,1,1,1,1,1,1,1,0,0,0,0]
-var count = 0;
 
-for (let i = 0; i < arr.length; i++){
-    if (arr[i] == 1){
-        count ++;
+// //  TASK # 01
+// //  Counting Number of 1's in an array
+// var arr = [1,123,22,31,4,57,8,3,1,23,22,100,1001,1110100101,123123,098123,0,0,1,1,1,1,1,1,1,1,0,0,0,0]
+// var count = 0;
+
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] == 1){
+//         count ++;
+//     }
+// };
+
+// console.log(count);
+
+
+// TASK # 02 
+// Getting the maximum number of the array. 
+
+var arr = [1,2,5,9,10,12,11]
+var maxNum = 0;
+
+for (let i = 0; i < (arr.length-1); i++){
+    if (arr[i] >= arr[i+1]){
+        console.log(arr[i], arr[i+1]);
+        maxNum = arr[i];
     }
 };
 
-console.log(count);
+console.log("Maximum Number",maxNum);
 
-
+// ASSIGNMENT : PASS BY VALUE , PASS BY REFERENCE 
