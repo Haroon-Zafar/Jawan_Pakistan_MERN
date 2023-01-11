@@ -123,19 +123,44 @@
 // console.log(count);
 
 
-// TASK # 02 
-// Getting the maximum number of the array. 
+// // TASK # 02 
+// // Getting the maximum number of the array. 
 
-var arr = [1,2,5,9,10,12,11]
-var maxNum = 0;
+// var arr = [1,2,5,9,10,12,100,11]
+// var maxNum = 0;
 
-for (let i = 0; i < (arr.length-1); i++){
-    if (arr[i] >= arr[i+1]){
-        console.log(arr[i], arr[i+1]);
-        maxNum = arr[i];
-    }
-};
+// for (let i = 0; i < (arr.length-1); i++){
+//     if (arr[i] >= arr[i+1]){
+//         // console.log(arr[i], arr[i+1]);
+//         maxNum = arr[i];
+//     }
+// };
 
-console.log("Maximum Number",maxNum);
+// console.log("Maximum Number",maxNum);
+
+
 
 // ASSIGNMENT : PASS BY VALUE , PASS BY REFERENCE 
+
+// 1st Most Important Difference 
+// Primitive Data Types ( Number, Boolean, String, Undefined, null ) : which are passed by value
+// Non-Primitive Data Types ( Objects and arrays ) : which are passed by reference
+
+
+// PASS BY VALUE EXAMPLE 
+
+let firstVariable = 5;
+
+// firstVariable's value is passed into secondVariable
+
+let secondVariable = firstVariable;
+// both variables are independent of each other
+
+console.log(firstVariable); // 5
+console.log(secondVariable); // 5
+
+secondVariable = firstVariable + 5;
+
+console.log(firstVariable); // 5
+console.log(secondVariable); // 10
+
