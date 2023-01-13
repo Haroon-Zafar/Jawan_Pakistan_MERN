@@ -353,21 +353,25 @@
 // console.log(a); // My Name is 3
 
 
-    var marks = 60;
 
 // if (marks < 70 ){
+    
+    //     console.log("A Grade");
+    // }
+    // else{
+        //     console.log("C Grade");
+        // }
+        
+        // TERNARY OPERATOR
+        // ONE LINER IF-ELSE 
+        
+        // SYNTAX
+        
+        //  condition ? true_expression : false_expression
+        
+// IF ELIF ELSE using TERNARY OPERATOR
+// var marks = 40;
+// marks > 80 ? console.log("A+ Grade") : marks <=80 && marks >60 ? console.log("B Grade"): console.log("C Grade");
 
-//     console.log("A Grade");
-// }
-// else{
-//     console.log("C Grade");
-// }
 
-// TERNARY OPERATOR
-// ONE LINER IF-ELSE 
-
-// SYNTAX
-
-//  condition ? true_expression : false_expression
-
-marks > 70 ? console.log("A Grade") : console.log("C Grade")
+// CIRCUITS : 
