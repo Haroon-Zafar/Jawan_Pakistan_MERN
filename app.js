@@ -193,3 +193,13 @@ console.log(obj2); // {name: "Ali", password: "easypeasy"}
 // if we change the contents of the container using any of the reference it will effect all the references accessing the contents of that container. 
 
 
+
+
+
+//  ########################## CLASS # 02 ##########################
+
+
+// ECMA SCRIPT 6
+
+// ECMA stands for European Computer Manufacturers Association
+// ECMA Script 6 is the latest version of JavaScript
