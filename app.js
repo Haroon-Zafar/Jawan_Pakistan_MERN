@@ -407,11 +407,19 @@
 
 // OR GATE
 
-let bool = true;
+// let bool = true;
 
-// We want to store ABC in total if bool is true otherwise we want to store 0 in total
+// // In OR Gate we check from left to right, if first input is TRUE then it will print True.
+// let total = bool || "ABC";
 
-// In OR Gate we check from left to right, if first input is TRUE then it will print True.
-let total = bool || "ABC";
+// console.log(total); // true
 
-console.log(total); // ABC
+
+// let bool = true;
+
+// // In OR Gate we check from left to right, if first input is TRUE then it will print True.
+// // else it will print the last operand
+// let total = bool || NaN;
+
+// console.log(total); // true
+
