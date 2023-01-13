@@ -432,6 +432,10 @@ let object = {
     category : "XYZ",
 }
 
-// .keys() is a method which is used to get all the keys of an object
-let arr = Object.keys(object);
-console.log(arr); // [ 'id', 'name', 'category' ]
+// // .keys() is a method which is used to get all the keys of an object
+// let arr = Object.keys(object);
+// console.log(arr); // [ 'id', 'name', 'category' ]
+
+// .values() is a method which is used to get all the values of an object
+let arr = Object.values(object);
+console.log(arr); // [ 1, 'ABC', 'XYZ' ]
