@@ -385,11 +385,20 @@
 
 // NaN is a number which is not a number
 
-let num = 10 * 5 ;
+// let num = 10 * 5 ;
 
-// Using Circuits i.e Logic Gates i.e AND , OR , NOT , XOR
-let total = num || 0;
+// // Using Circuits i.e Logic Gates i.e AND , OR , NOT , XOR
+// let total = num || 0;
 
-console.log(total); // 0
+// console.log(total); // 0
 
 
+// AND GATE : ||
+let bool = true;
+
+// We want to store ABC in total if bool is true otherwise we want to store 0 in total
+
+// In AND gate from left, if first input in TRUE then it will print whatever is on the next operand.
+let total = bool && "ABC";
+
+console.log(total); // ABC
