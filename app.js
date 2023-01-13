@@ -347,7 +347,27 @@
 
 // Use of ` Back Ticks.
 
-var num = 3 ;
-var a = `My Name is ${num}`;
+// var num = 3 ;
+// var a = `My Name is ${num}`;
 
-console.log(a); // My Name is 3
+// console.log(a); // My Name is 3
+
+
+    var marks = 60;
+
+// if (marks < 70 ){
+
+//     console.log("A Grade");
+// }
+// else{
+//     console.log("C Grade");
+// }
+
+
+// ONE LINER IF-ELSE 
+
+// SYNTAX
+
+//  condition ? true_expression : false_expression
+
+marks > 70 ? console.log("A Grade") : console.log("C Grade")
