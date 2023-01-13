@@ -375,3 +375,9 @@
 
 
 // CIRCUITS : 
+
+let num = "ab" * 5;
+
+let total = num;
+
+console.log(total); // NaN
