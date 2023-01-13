@@ -376,8 +376,20 @@
 
 // CIRCUITS : 
 
-let num = "ab" * 5;
+// let num = 5 * "ab" ;
 
-let total = num;
+// // Using Circuits i.e Logic Gates i.e AND , OR , NOT , XOR
+// let total = num ;
 
-console.log(total); // NaN
+// console.log(total); // NaN
+
+// NaN is a number which is not a number
+
+let num = 10 * 5 ;
+
+// Using Circuits i.e Logic Gates i.e AND , OR , NOT , XOR
+let total = num || 0;
+
+console.log(total); // 0
+
+
