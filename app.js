@@ -289,9 +289,28 @@
 
 
 // EXAMPLE OF BLOCK SCOPE USING let, const
-if (true){
-    let a = "ABC";
-}
+// if (true){
+//     let a = "ABC";
+// }
 
 
-console.log(a); // Uncaught Reference error
+// console.log(a); // Uncaught Reference error
+
+
+// function abc(){
+//     var a = "ABC" ;
+
+// }
+
+// abc();
+// console.log(a); // Uncaught Reference
+
+// why ? because even if we are using var we are not getting the value of the variable
+
+
+// var 
+
+// function 
+
+// Hoisting : Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope 
+
