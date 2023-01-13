@@ -440,7 +440,15 @@ let object = {
 // let arr = Object.values(object);
 // console.log(arr); // [ 1, 'ABC', 'XYZ' ]
 
-// .entries() is a method which is used to get all the keys and values of an object
-let arr = Object.entries(object);
-console.log(arr); // [ [ 'id', 1 ], [ 'name', 'ABC' ], [ 'category', 'XYZ' ] ]
+// // .entries() is a method which is used to get all the keys and values of an object
+// let arr = Object.entries(object);
+// console.log(arr); // [ [ 'id', 1 ], [ 'name', 'ABC' ], [ 'category', 'XYZ' ] ]
 
+
+// .freeze() is a method which is used to freeze the object i.e we can not change the value of the object
+// Object.freeze(object);
+
+// PASS BY REFERENCE EXAMPLE
+object.category = "PQR";
+
+console.log(object); // { id: 1, name: 'ABC', category: 'XYZ' }
