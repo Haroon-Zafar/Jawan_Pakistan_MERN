@@ -279,11 +279,19 @@
 
 // EXAMPLE OF GLOBAL SCOPE 
 
+// if (true){
+//     var a = "ABC";
+// }
+
+// // Since var is a global declaration keyword, so it even inside a BLOCK ( if-else, loops body) it will be accessible by any one calling the variable
+
+// console.log(a);
+
+
+// EXAMPLE OF BLOCK SCOPE USING let, const
 if (true){
-    var a = "ABC";
+    let a = "ABC";
 }
 
-// Since var is a global declaration keyword, so it even inside a BLOCK ( if-else, loops body) it will be accessible by any one calling the variable
 
-console.log(a);
-
+console.log(a); // Uncaught Reference error
