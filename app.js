@@ -325,11 +325,29 @@
 // let a = "Abc";
 
 
-abc();
-function abc(){
-    console.log("abc");
-}
+// abc();
+// console.log(a); // Uncaught Reference Error
+// var comes out of IF-ELSE but can't come out of function
+// because whole function is hoisted and nothing inside of the function code is read by the compiler at the moment. 
+
+// // This solved the debate of BLOCK AND GLOBAL SCOPE.
+// function abc(){
+//     var a = "123";
+//     console.log("abc");
+// }
 
 // >> abc 
 
 // JAVASCRIPT IS FIRST READ THEN RUN ACCORDING TO THE TAGS OF THE HTML
+
+// WE DONOT USE `var` IN PROFESSIONAL CODE BECAUSE IT CAN BE RE-DECLARED AND HOISTING ISSUE.
+
+
+
+
+// Use of ` Back Ticks.
+
+var num = 3 ;
+var a = `My Name is ${num}`;
+
+console.log(a); // My Name is 3
