@@ -448,7 +448,62 @@ let object = {
 // .freeze() is a method which is used to freeze the object i.e we can not change the value of the object
 // Object.freeze(object);
 
-// PASS BY REFERENCE EXAMPLE
-object.category = "PQR";
+// // PASS BY REFERENCE EXAMPLE
+// object.category = "PQR";
 
-console.log(object); // { id: 1, name: 'ABC', category: 'XYZ' }
+// console.log(object); // { id: 1, name: 'ABC', category: 'XYZ' }
+
+
+
+let arr = [
+    {
+        id: 1,
+        name: "Haroon",
+        category: "A+",
+        city: "karachi"
+    },
+    {
+        id: 2,
+        name: "rafay",
+        category: "A+",
+        city: "karachi"
+    },
+    {
+        id: 3,
+        name: "ahsan",
+        category: "A+",
+        city: "karachi"
+    },
+    {
+        id: 4,
+        name: "ahmed",
+        category: "B+",
+        city: "karachi"
+    },
+    {
+        id: 5,
+        name: "arsalan",
+        category: "C+",
+        city: "karachi"
+    },
+    {
+        id: 6,
+        name: "Shafay",
+        category: "D+",
+        city: "karachi"
+    }
+]
+
+// for keys of array 
+let valuesOfArray = Object.values(arr);
+console.log(valuesOfArray); // [ { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' } ]
+
+// // for keys of array 
+let keysOfArray = Object.keys(arr[0]);
+// console.log(keysOfArray); // [ 'id', 'name', 'category', 'city' ]
+
+// .map() is a method which is used to iterate over an array
+for (let i = 0; i < valuesOfArray.length; i++) {
+    document.getElementById("table").innerHTML = `${keysOfArray.map((key) => `<th>${key}</th>`).join("")}`;
+    document.getElementById("table").innerHTML += `${valuesOfArray.map((value) => `<tr>${keysOfArray.map((key) => `<td>${value[key]}</td>`).join("")}</tr>`).join("")}`;
+}
