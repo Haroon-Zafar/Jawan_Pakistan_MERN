@@ -149,42 +149,42 @@
 
 // PASS BY VALUE EXAMPLE 
 
-let firstVariable = 5;
+// let firstVariable = 5;
 
-// firstVariable's value is passed into secondVariable
+// // firstVariable's value is passed into secondVariable
 
-let secondVariable = firstVariable;
-// both variables are independent of each other
+// let secondVariable = firstVariable;
+// // both variables are independent of each other
 
-// console.log(firstVariable); // 5
-// console.log(secondVariable); // 5
+// // console.log(firstVariable); // 5
+// // console.log(secondVariable); // 5
 
-// secondVariable = firstVariable + 5;
+// // secondVariable = firstVariable + 5;
 
-// console.log(firstVariable); // 5
-// console.log(secondVariable); // 10
+// // console.log(firstVariable); // 5
+// // console.log(secondVariable); // 10
 
 
-// PASS BY REFERENCE EXAMPLE 
+// // PASS BY REFERENCE EXAMPLE 
 
-let obj1 = {
-    name: "Ali",
-    password: "123"
-}
+// let obj1 = {
+//     name: "Ali",
+//     password: "123"
+// }
 
-// obj1's value is passed into obj2
+// // obj1's value is passed into obj2
 
-let obj2 = obj1;
+// let obj2 = obj1;
 
-// console.log(obj1); // {name: "Ali", password: "123"}
-// console.log(obj2); // {name: "Ali", password: "123"}
+// // console.log(obj1); // {name: "Ali", password: "123"}
+// // console.log(obj2); // {name: "Ali", password: "123"}
 
-// If we want to change the password using obj2
+// // If we want to change the password using obj2
 
-obj2.password = "easypeasy";
+// obj2.password = "easypeasy";
 
-console.log(obj1); // {name: "Ali", password: "easypeasy"}
-console.log(obj2); // {name: "Ali", password: "easypeasy"}
+// console.log(obj1); // {name: "Ali", password: "easypeasy"}
+// console.log(obj2); // {name: "Ali", password: "easypeasy"}
 
 // Both obj1 and obj2 are changed because they are passed by reference
 // Object is a container which holds the data in key value pairs
@@ -203,3 +203,33 @@ console.log(obj2); // {name: "Ali", password: "easypeasy"}
 
 // ECMA stands for European Computer Manufacturers Association
 // ECMA Script 6 is the latest version of JavaScript
+
+// ES6 is a standard for JavaScript
+// ES6 was launched in 2016 
+// we study it because in this release we got so many major updates which solved many problems of developers
+// ES6 is also known as ECMAScript 2015
+// Our code will get shorter and shorter alongside getting advanced and professional
+
+// CODE MUST BE EFFICEINT AND READABLE
+
+
+// var , let , const
+// var is a keyword which is used to declare a variable
+// let is a keyword which is used to declare a variable
+// const is a keyword which is used to declare a variable
+
+// difference between var , let and const
+// var is a function scoped variable
+// let and const are block scoped variables
+
+// FUNCTION SCOPE : When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.
+
+// Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop
+
+
+var a = "ABC";
+
+var a = 123;
+
+console.log(a);
+
