@@ -363,7 +363,7 @@
 //     console.log("C Grade");
 // }
 
-
+// TERNARY OPERATOR
 // ONE LINER IF-ELSE 
 
 // SYNTAX
