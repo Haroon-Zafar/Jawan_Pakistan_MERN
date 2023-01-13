@@ -393,12 +393,25 @@
 // console.log(total); // 0
 
 
-// AND GATE : ||
+// // AND GATE : ||
+// let bool = true;
+
+// // We want to store ABC in total if bool is true otherwise we want to store 0 in total
+
+// // In AND gate from left, if first input in TRUE then it will print whatever is on the next operand.
+// let total = bool && "ABC";
+
+// console.log(total); // ABC
+
+
+
+// OR GATE
+
 let bool = true;
 
 // We want to store ABC in total if bool is true otherwise we want to store 0 in total
 
-// In AND gate from left, if first input in TRUE then it will print whatever is on the next operand.
-let total = bool && "ABC";
+// In OR Gate we check from left to right, if first input is TRUE then it will print True.
+let total = bool || "ABC";
 
 console.log(total); // ABC
