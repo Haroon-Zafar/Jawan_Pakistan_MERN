@@ -226,10 +226,17 @@
 
 // Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop
 
+// var is re-declarable
+// let and const are not re-declarable
 
 var a = "ABC";
 
 var a = 123;
 
-console.log(a);
+console.log(a); // 123
+
+
+// SINCE let can not be re-declared
+// let b = "ABC";
+// let b = 123; // Uncaught SyntaxError: Identifier 'b' has already been declared
 
