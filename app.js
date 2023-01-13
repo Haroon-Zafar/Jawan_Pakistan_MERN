@@ -423,3 +423,15 @@
 
 // console.log(total); // true
 
+
+
+
+let object = {
+    id : 1,
+    name : "ABC",
+    category : "XYZ",
+}
+
+// .keys() is a method which is used to get all the keys of an object
+let arr = Object.keys(object);
+console.log(arr); // [ 'id', 'name', 'category' ]
