@@ -314,3 +314,22 @@
 
 // Hoisting : Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope 
 
+// console.log(a); // Undefined
+// var a = "Abc";
+
+
+// variable's memory is allocated once the program is instantiated i.e variable is declared but it is not getting the value for now.
+
+
+// console.log(a); // Uncaught Reference
+// let a = "Abc";
+
+
+abc();
+function abc(){
+    console.log("abc");
+}
+
+// >> abc 
+
+// JAVASCRIPT IS FIRST READ THEN RUN ACCORDING TO THE TAGS OF THE HTML
