@@ -229,14 +229,25 @@
 // var is re-declarable
 // let and const are not re-declarable
 
-var a = "ABC";
+// var a = "ABC";
 
-var a = 123;
+// var a = 123;
 
-console.log(a); // 123
+// console.log(a); // 123
 
 
 // SINCE let can not be re-declared
 // let b = "ABC";
 // let b = 123; // Uncaught SyntaxError: Identifier 'b' has already been declared
 
+// // const can not be re-declared
+// const c = "ABC";
+// const c = 123; // Uncaught SyntaxError: Identifier 'c' has already been declared
+
+
+var a = "ABC";
+
+// Reassigning the value of a
+a = 123;
+
+console.log("Reassigned Value", a); // 123
