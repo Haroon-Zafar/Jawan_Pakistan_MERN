@@ -245,9 +245,45 @@
 // const c = 123; // Uncaught SyntaxError: Identifier 'c' has already been declared
 
 
-var a = "ABC";
+// var IS REASSIGNABLE
+// var a = "ABC";
 
-// Reassigning the value of a
-a = 123;
+// // Reassigning the value of a
+// a = 123;
 
-console.log("Reassigned Value", a); // 123
+// console.log("Reassigned Value", a); // 123
+
+
+// let is reassignable
+
+// let a = "ABC";
+// a = 123;
+// console.log(a); // 123
+
+
+// const is not reassignable
+// const a = "ABC";
+// a = 123; // Uncaught TypeError: Assignment to constant variable.
+
+// WHAT's a SCOPE ?
+// SCOPE is the area where a variable is accessible
+// scope : inside CURLY BRACKETS and it is dependent on some condition. 
+
+
+// THERE ARE TWO TYPES OF SCOPES :
+// 1. GLOBAL SCOPE  
+// 2. LOCAL SCOPE 
+
+// 1. Global Scope : variables which are declared outside of any function and can be accessed globally
+
+
+// EXAMPLE OF GLOBAL SCOPE 
+
+if (true){
+    var a = "ABC";
+}
+
+// Since var is a global declaration keyword, so it even inside a BLOCK ( if-else, loops body) it will be accessible by any one calling the variable
+
+console.log(a);
+
