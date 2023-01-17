@@ -554,29 +554,46 @@
 
 
 
-// SPREAD OPERATOR
+// // SPREAD OPERATOR
 
-// It is denoted by three dots ...
-// Spread Operator is used to copy the values of an array or object to another array or object without changing the original array or object
+// // It is denoted by three dots ...
+// // Spread Operator is used to copy the values of an array or object to another array or object without changing the original array or object
 
-let config = {
-    inst : "SAIMS",
-    course : "Web and Mobile App",
-    batch : 6,
-    year : 2023,
-}
+// let config = {
+//     inst : "SAIMS",
+//     course : "Web and Mobile App",
+//     batch : 6,
+//     year : 2023,
+// }
 
-let student1 = {
-    ...config,
-    name : "Abu Bakar",
-    age : 18,
-    sec : "A",
-}
+// let student1 = {
+//     ...config,
+//     name : "Abu Bakar",
+//     age : 18,
+//     sec : "A",
+// }
 
-// console.log(student1); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023, name: 'Abu Bakar', age: 18, sec: 'A' }
+// // console.log(student1); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023, name: 'Abu Bakar', age: 18, sec: 'A' }
 
 
-let student2 = {
-    ...config,
-}
-console.log(student2); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023 }
+// let student2 = {
+//     ...config,
+// }
+// console.log(student2); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023 }
+
+
+// Spread Operator for arrays 
+
+// let arr1 = [1,2,3,4,5];
+
+// let arr2 = [...arr1,6,7,8,9,10];
+
+// console.log(arr2); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+// change the arrangment of the array
+
+// let arr1 = [1,2,3,4,5];
+
+// let arr2 = [6,7,8,9,10,...arr1,];
+
+// console.log(arr2); // [6, 7, 8, 9, 10, 1, 2, 3, 4, 5]
