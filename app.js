@@ -426,11 +426,11 @@
 
 
 
-let object = {
-    id : 1,
-    name : "ABC",
-    category : "XYZ",
-}
+// let object = {
+//     id : 1,
+//     name : "ABC",
+//     category : "XYZ",
+// }
 
 // // .keys() is a method which is used to get all the keys of an object
 // let arr = Object.keys(object);
@@ -455,55 +455,101 @@ let object = {
 
 
 
-let arr = [
-    {
-        id: 1,
-        name: "Haroon",
-        category: "A+",
-        city: "karachi"
-    },
-    {
-        id: 2,
-        name: "rafay",
-        category: "A+",
-        city: "karachi"
-    },
-    {
-        id: 3,
-        name: "ahsan",
-        category: "A+",
-        city: "karachi"
-    },
-    {
-        id: 4,
-        name: "ahmed",
-        category: "B+",
-        city: "karachi"
-    },
-    {
-        id: 5,
-        name: "arsalan",
-        category: "C+",
-        city: "karachi"
-    },
-    {
-        id: 6,
-        name: "Shafay",
-        category: "D+",
-        city: "karachi"
-    }
-]
-
-// for keys of array 
-let valuesOfArray = Object.values(arr);
-console.log(valuesOfArray); // [ { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' } ]
+// let arr = [
+//     {
+//         id: 1,
+//         name: "Haroon",
+//         category: "A+",
+//         city: "karachi"
+//     },
+//     {
+//         id: 2,
+//         name: "rafay",
+//         category: "A+",
+//         city: "karachi"
+//     },
+//     {
+//         id: 3,
+//         name: "ahsan",
+//         category: "A+",
+//         city: "karachi"
+//     },
+//     {
+//         id: 4,
+//         name: "ahmed",
+//         category: "B+",
+//         city: "karachi"
+//     },
+//     {
+//         id: 5,
+//         name: "arsalan",
+//         category: "C+",
+//         city: "karachi"
+//     },
+//     {
+//         id: 6,
+//         name: "Shafay",
+//         category: "D+",
+//         city: "karachi"
+//     }
+// ]
 
 // // for keys of array 
-let keysOfArray = Object.keys(arr[0]);
-// console.log(keysOfArray); // [ 'id', 'name', 'category', 'city' ]
+// let valuesOfArray = Object.values(arr);
+// console.log(valuesOfArray); // [ { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' }, { id: 1, name: 'rafay', category: 'A+', city: 'karachi' } ]
 
-// .map() is a method which is used to iterate over an array
-for (let i = 0; i < valuesOfArray.length; i++) {
-    document.getElementById("table").innerHTML = `${keysOfArray.map((key) => `<th>${key}</th>`).join("")}`;
-    document.getElementById("table").innerHTML += `${valuesOfArray.map((value) => `<tr>${keysOfArray.map((key) => `<td>${value[key]}</td>`).join("")}</tr>`).join("")}`;
+// // // for keys of array 
+// let keysOfArray = Object.keys(arr[0]);
+// // console.log(keysOfArray); // [ 'id', 'name', 'category', 'city' ]
+
+// // .map() is a method which is used to iterate over an array
+// // for (let i = 0; i < valuesOfArray.length; i++) {
+// //     document.getElementById("table").innerHTML = `${keysOfArray.map((key) => `<th>${key}</th>`).join("")}`;
+// //     document.getElementById("table").innerHTML += `${valuesOfArray.map((value) => `<tr>${keysOfArray.map((key) => `<td>${value[key]}</td>`).join("")}</tr>`).join("")}`;
+// // }
+
+
+// // Solution of sir
+
+// let labels = Object.keys(arr[0]);
+
+// let htmlHeader = document.getElementById("header");
+// let htmlBody = document.getElementById("body");
+
+// for (let i = 0; i < labels.length; i++) {
+//     htmlHeader.innerHTML += `<th>${labels[i]}</th>`;
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//     let arrElements = arr[i];
+//     htmlBody.innerHTML += `<tr>
+//     <td>${arrElements.id}</td>
+//     <td>${arrElements.name}</td>
+//     <td>${arrElements.category}</td>
+//     <td>${arrElements.city}</td>
+//     </tr>`
+// }
+
+
+
+
+
+
+
+
+
+// ############################## CLASS # 03 ##############################
+
+
+// REVISION OF PASS BY REFERENCE
+let firstVariable = {
+    name : "Haroon",
 }
+
+let secondVariable = firstVariable;
+
+secondVariable.id = 123;
+
+console.log(firstVariable); // { name: 'Haroon', id: 123 }
+
+
