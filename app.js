@@ -597,3 +597,25 @@
 // let arr2 = [6,7,8,9,10,...arr1,];
 
 // console.log(arr2); // [6, 7, 8, 9, 10, 1, 2, 3, 4, 5]
+
+
+// let firstVariable = {
+//     name : "Haroon",
+// }
+
+// let secondVariable = firstVariable;
+// above code is pass by reference
+
+// below code is assigning the values of firstVariable to secondVariable without just copying the reference
+// let secondVariable = {
+//     ...firstVariable,
+// }
+
+// there is no connection between firstVariable and secondVariable.
+// because we have passed the secondVariable actual values rather than just passing the reference.
+// secondVariable.id = 123;
+
+// console.log(firstVariable); // { name: 'Haroon' }
+// console.log(secondVariable); // { name: 'Haroon', id: 123 }
+
+
