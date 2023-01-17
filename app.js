@@ -739,14 +739,59 @@
 
 // FOR ARRAYS
 
-let array = ['abc', 'def', 'ghi', 'jkl', 'mno'];
+// let array = ['abc', 'def', 'ghi', 'jkl', 'mno'];
 
-let [value1, value2, value3, value4, value5] = array;
+// // when array is of less number of elements
+// let [value1, value2, value3, value4, value5] = array;
 
-console.log(value1); // abc
-console.log(value2); // def 
-console.log(value3); // ghi
-console.log(value4); // jkl
-console.log(value5); // mno
+// console.log(value1); // abc
+// console.log(value2); // def 
+// console.log(value3); // ghi
+// console.log(value4); // jkl
+// console.log(value5); // mno
+
+
+// when array is of greater number of elements
+// for (let i = 0; i < array.length; i++) {
+//     let variableName = "value"+i;
+//     // console.log(array[i]);
+//     console.log(variableName);
+// }
+// let [variableName] = array[i];
+// console.log(variableName);
+    
+
+
+// TASK 1 CLASS # 03
+
+// Object destructured 
+// Array destructured
+
+// let arr = [
+//     2,
+//     2,
+//     3,
+//     "abc",
+//     "ty",
+//     [
+//     true,
+//     { id: 374, details: [{ id: 1, name: "Abu Bakar", dt: [1, 2, 3, 4, 5] }] },
+//     ],
+// ];
+
+// console.log(arr[5]);
+
+// let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
+
+// console.log(a); // 2
+// console.log(b); // 2
+// console.log(c); // 3
+// console.log(d); // abc
+// console.log(e); // ty
+// console.log(f); // true
+// console.log(id); // 374
+// console.log(id2); // 1
+// console.log(name); // Abu Bakar
+// console.log(dt); // [ 1, 2, 3, 4, 5 ]
 
 
