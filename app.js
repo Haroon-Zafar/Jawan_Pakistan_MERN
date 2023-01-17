@@ -716,24 +716,35 @@
 
 
 
-let obj = {
-    id : 1,
-    name : "Haroon",
-    userName : "haroon123",
-    contact : "123456789",
+// let obj = {
+//     id : 1,
+//     name : "Haroon",
+//     userName : "haroon123",
+//     contact : "123456789",
 
-};
+// };
+
+// // let {id, name, userName, contact} = obj;
+// // This is used to extract the values from an object and store them in a variable 
+
+// // let {name} = obj;
+// // console.log(name); // Haroon    
 
 // let {id, name, userName, contact} = obj;
-// This is used to extract the values from an object and store them in a variable 
 
-// let {name} = obj;
-// console.log(name); // Haroon    
+// console.log(id); // 1
+// console.log(name); // Haroon
+// console.log(userName); // haroon123
+// console.log(contact); // 123456789
 
-let {id, name, userName, contact} = obj;
+// FOR ARRAYS
 
-console.log(id); // 1
-console.log(name); // Haroon
-console.log(userName); // haroon123
-console.log(contact); // 123456789
+let array = ['abc', 'def', 'ghi', 'jkl', 'mno'];
 
+let [value1, value2, value3, value4, value5] = array;
+
+console.log(value1); // abc
+console.log(value2); // def 
+console.log(value3); // ghi
+console.log(value4); // jkl
+console.log(value5); // mno
