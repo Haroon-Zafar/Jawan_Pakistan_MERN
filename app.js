@@ -619,3 +619,13 @@
 // console.log(secondVariable); // { name: 'Haroon', id: 123 }
 
 
+
+let array1 = ['a', 'b', 'c'];
+
+let array2 = [...array1];
+
+array2.push('d');
+
+console.log(array1); // [ 'a', 'b', 'c' ]
+console.log(array2); // [ 'a', 'b', 'c', 'd' ]
+
