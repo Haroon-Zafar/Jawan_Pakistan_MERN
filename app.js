@@ -674,3 +674,16 @@
 // delete b[0].details;
 
 // console.log(obj); 
+
+
+
+
+// .splice() is a method which is used to remove an element from an array
+
+// rest operator
+// rest operator always brings the values in an array
+function abc(...rest){
+    console.log(rest);
+}
+
+abc(1,2,3,4,5,6,7,8,9,10); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
