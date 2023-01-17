@@ -632,3 +632,45 @@
 // console.log(array1); // [ 'a', 'b', 'c' ]
 // console.log(array2); // [ 'a', 'b', 'c', 'd' ]
 
+
+
+// Initializing a nested object with values
+// let obj = {
+//     name : "Haroon",
+//     id : 1,
+//     details : {
+//         age : 18,
+//         city : "Karachi",
+//         country : "Pakistan",
+//     },
+// }
+
+// let obj2 = {
+//     ...obj,
+// }
+
+
+// delete obj2[0].details;
+
+// console.log(obj); // Uncaught TypeError: Cannot set property 'details' of undefined
+
+// let obj = {
+//     name : "Haroon",
+//     id : 1,
+//     details : {
+//         age : 18,
+//         city : "Karachi",
+//         country : "Pakistan",
+//     },
+// }
+
+// // we want to remove reference of nested object. We want to remove the nested object from the original object.
+// // JSON.parse() is used to convert a string to an object
+// // JSON.stringify() is used to convert an object to a string
+// let obj2 = JSON.stringify([...obj,]);
+
+// let b = JSON.parse(obj2);
+
+// delete b[0].details;
+
+// console.log(obj); 
