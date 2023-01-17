@@ -542,14 +542,36 @@
 
 
 // REVISION OF PASS BY REFERENCE
-let firstVariable = {
-    name : "Haroon",
+// let firstVariable = {
+//     name : "Haroon",
+// }
+
+// let secondVariable = firstVariable;
+
+// secondVariable.id = 123;
+
+// console.log(firstVariable); // { name: 'Haroon', id: 123 }
+
+
+
+// SPREAD OPERATOR
+
+// It is denoted by three dots ...
+// Spread Operator is used to copy the values of an array or object to another array or object without changing the original array or object
+
+let config = {
+    inst : "SAIMS",
+    course : "Web and Mobile App",
+    batch : 6,
+    year : 2023,
 }
 
-let secondVariable = firstVariable;
+let student1 = {
+    ...config,
+    name : "Abu Bakar",
+    age : 18,
+    sec : "A",
+}
 
-secondVariable.id = 123;
-
-console.log(firstVariable); // { name: 'Haroon', id: 123 }
-
+// console.log(student1); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023, name: 'Abu Bakar', age: 18, sec: 'A' }
 
