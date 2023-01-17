@@ -704,13 +704,36 @@
 // CUSTOM SPLICE FUNCTION
 // mySplice() function
 
-let array = ['a', 'b', 'c'];
+// let array = ['a', 'b', 'c'];
 
-// for multiple elements we use rest operator
-function mySplice(index, deleteCount, ...rest){
-    array[index] = rest;
-    console.log(array);
-}
+// // for multiple elements we use rest operator
+// function mySplice(index, deleteCount, ...rest){
+//     array[index] = rest;
+//     console.log(array);
+// }
 
-mySplice(1, 2, 'd', 'e', 'f'); // [ 'a', [ 'd', 'e', 'f' ], 'c' ]
+// mySplice(1, 2, 'd', 'e', 'f'); // [ 'a', [ 'd', 'e', 'f' ], 'c' ]
+
+
+
+let obj = {
+    id : 1,
+    name : "Haroon",
+    userName : "haroon123",
+    contact : "123456789",
+
+};
+
+// let {id, name, userName, contact} = obj;
+// This is used to extract the values from an object and store them in a variable 
+
+// let {name} = obj;
+// console.log(name); // Haroon    
+
+let {id, name, userName, contact} = obj;
+
+console.log(id); // 1
+console.log(name); // Haroon
+console.log(userName); // haroon123
+console.log(contact); // 123456789
 
