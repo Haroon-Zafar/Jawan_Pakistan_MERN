@@ -675,6 +675,17 @@
 
 // console.log(obj); 
 
+// '{"name":"John", "age":30, "city":"New York"}'
+// Use the JavaScript function JSON.parse() to convert text into a JavaScript object:
+// const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+// The JSON.stringify() static method converts a JavaScript value to a JSON string
+
+// let stringyfyArray = JSON.stringify(['a', 'b', 'c']);
+// let obj = JSON.parse(stringyfyArray);
+
+// delete obj[0];
+// console.log(obj); // [ <1 empty item>, 'b', 'c' ]
+
 
 
 
