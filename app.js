@@ -575,3 +575,8 @@ let student1 = {
 
 // console.log(student1); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023, name: 'Abu Bakar', age: 18, sec: 'A' }
 
+
+let student2 = {
+    ...config,
+}
+console.log(student2); // { inst: 'SAIMS', course: 'Web and Mobile App', batch: 6, year: 2023 }
