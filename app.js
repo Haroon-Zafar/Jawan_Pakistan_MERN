@@ -620,12 +620,15 @@
 
 
 
-let array1 = ['a', 'b', 'c'];
+// let array1 = ['a', 'b', 'c'];
 
-let array2 = [...array1];
+// let array2 = [...array1];
 
-array2.push('d');
+// // The pop() method removes (pops) the last element of an array.
+// // array2.pop();
 
-console.log(array1); // [ 'a', 'b', 'c' ]
-console.log(array2); // [ 'a', 'b', 'c', 'd' ]
+// array2.push('d');
+
+// console.log(array1); // [ 'a', 'b', 'c' ]
+// console.log(array2); // [ 'a', 'b', 'c', 'd' ]
 
