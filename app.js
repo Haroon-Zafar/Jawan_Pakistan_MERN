@@ -767,21 +767,20 @@
 // Object destructured 
 // Array destructured
 
-// let arr = [
-//     2,
-//     2,
-//     3,
-//     "abc",
-//     "ty",
-//     [
-//     true,
-//     { id: 374, details: [{ id: 1, name: "Abu Bakar", dt: [1, 2, 3, 4, 5] }] },
-//     ],
-// ];
+let arr = [
+    2,
+    2,
+    3,
+    "abc",
+    "ty",
+    [
+    true,
+    { id: 374, details: [{ id: 1, name: "Abu Bakar", dt: [1, 2, 3, 4, 5] }] },
+    ],
+];
 
-// console.log(arr[5]);
 
-// let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
+let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
 
 // console.log(a); // 2
 // console.log(b); // 2
