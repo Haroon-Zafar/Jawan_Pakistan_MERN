@@ -680,10 +680,26 @@
 
 // .splice() is a method which is used to remove an element from an array
 
-// rest operator
-// rest operator always brings the values in an array
-function abc(...rest){
-    console.log(rest);
+// // rest operator
+// // rest operator always brings the values in an array
+// function abc(...rest){
+//     console.log(rest);
+// }
+
+// abc(1,2,3,4,5,6,7,8,9,10); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+// .splice() is a method which is used to remove an element from an array and it also returns the removed element
+
+// CUSTOM SPLICE FUNCTION
+// mySplice() function
+
+let array = ['a', 'b', 'c'];
+
+// for multiple elements we use rest operator
+function mySplice(index, deleteCount, ...rest){
+    array[index] = rest;
+    console.log(array);
 }
 
-abc(1,2,3,4,5,6,7,8,9,10); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+mySplice(1, 2, 'd', 'e', 'f'); // [ 'a', [ 'd', 'e', 'f' ], 'c' ]
+
