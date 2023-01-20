@@ -908,6 +908,16 @@ function one(firstArgument){
     }
 }
 
-let a = one("ABC");
+// let a = one("ABC");
 
-console.log(a); // [Function: secondArgument]   
+// console.log(a); 
+// Inside one function
+// ABC
+// ƒ (secondArgument){
+//     console.log("Inside second function");
+//     console.log(secondArgument);
+// } 
+
+
+// Giving the separate arguments to the nested function
+one("ABC")("DEF");
