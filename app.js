@@ -946,9 +946,41 @@
 // Arrow function is a spaceless function
 
 
+// BEFORE ARROW FUNCTION
+// hello = function() {
+//  return "Hello World!";
+// }
+
+// AFTER ARROW FUNCTION
+// hello = () => {
+//  return "Hello World!";
+// }
+
+
+
+
+
+
+
+
+// Arrow functions were introduced in ES6.s
+
+// second pair of round brackets () are used to call the function and now the function is called and is stored as 
+// a string in a 
 let a =(() => {
     console.log("Hello");
 })();
 
+let b = undefined ; 
+// console.log(a);
+// Hello 
 
-console.log(a());
+
+let c = (b || 0) * 1 - 10;
+console.log(c); // -10
+
+// SELF STUDY :
+
+// CLOSURES 
+// DEFAULT PARAMETER
+// LEXICUAL SCOPING 
