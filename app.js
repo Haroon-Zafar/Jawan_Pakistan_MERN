@@ -858,19 +858,20 @@
 
 // Higher order functions are those functions which take a function as an argument or return a function as an output
 
+// FUNCTION AS A PARAMETER
 
-function one(firstArgument){
-    // console.log("Inside one function");
-    console.log(firstArgument);
-}
+// function one(firstArgument){
+//     // console.log("Inside one function");
+//     console.log(firstArgument);
+// }
 
-function second(secondArgument){
-    // console.log("Inside second function");
-    return(secondArgument);
-}
+// function second(secondArgument){
+//     // console.log("Inside second function");
+//     return(secondArgument);
+// }
 
 // EXAMPLE : 
-one(second("Muhammad Harooon Zafar")); 
+// one(second("Muhammad Harooon Zafar")); 
 
 // // Inside one function
 // // Inside second function
@@ -885,6 +886,28 @@ one(second("Muhammad Harooon Zafar"));
 
 
 // EXAMPLE :
-one(second(second("Muhammad Harooon Zafar")));
+// one(second(second("Muhammad Harooon Zafar")));
 // Muhammad Harooon Zafar
 // Muhammad Harooon Zafar
+
+
+
+
+// NESTED FUNCTION IS RETURNING AS A VALUE 
+
+function one(firstArgument){
+    console.log("Inside one function");
+    console.log(firstArgument);
+    // Here we are returning a function as a value this function is called nested function
+    // This function is same as the called function
+    // This is anonymous function
+    // The argument is same as the called function
+    return function(secondArgument){
+        console.log("Inside second function");
+        console.log(secondArgument);
+    }
+}
+
+let a = one("ABC");
+
+console.log(a); // [Function: secondArgument]   
