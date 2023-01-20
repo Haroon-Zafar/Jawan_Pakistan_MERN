@@ -780,7 +780,7 @@ let arr = [
 ];
 
 
-let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
+// let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
 
 // console.log(a); // 2
 // console.log(b); // 2
@@ -792,5 +792,33 @@ let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
 // console.log(id2); // 1
 // console.log(name); // Abu Bakar
 // console.log(dt); // [ 1, 2, 3, 4, 5 ]
+
+
+
+
+
+// ################################### CLASS # 04 #########################################
+
+// ARRAY FUNCTIONS : 
+
+// Those functions who have . dot in them are called array functions
+// Those functions who don't have . dot in them are called normal/BUILTIN functions
+
+
+// DIFFERENCE BETWEEN ARRAY FUNCTIONS AND BUILTIN FUNCTIONS
+
+// Difference between Method and Function is that a method is of an object and a function is not of an object
+// Method has to be called from an object 
+// Whereas Funciton can be called independently from anywhere 
+
+
+
+// .map() :
+
+// .map() is used to iterate over an array and return a new array
+
+const array = [1, 2, 3, 4, 5];
+
+
 
 
