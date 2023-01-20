@@ -895,18 +895,18 @@
 
 // NESTED FUNCTION IS RETURNING AS A VALUE 
 
-function one(firstArgument){
-    console.log("Inside one function");
-    console.log(firstArgument);
-    // Here we are returning a function as a value this function is called nested function
-    // This function is same as the called function
-    // This is anonymous function
-    // The argument is same as the called function
-    return function(secondArgument){
-        console.log("Inside second function");
-        console.log(secondArgument);
-    }
-}
+// function one(firstArgument){
+//     console.log("Inside one function");
+//     console.log(firstArgument);
+//     // Here we are returning a function as a value this function is called nested function
+//     // This function is same as the called function
+//     // This is anonymous function
+//     // The argument is same as the called function
+//     return function(secondArgument){
+//         console.log("Inside second function");
+//         console.log(secondArgument);
+//     }
+// }
 
 // let a = one("ABC");
 
@@ -919,5 +919,25 @@ function one(firstArgument){
 // } 
 
 
-// Giving the separate arguments to the nested function
-one("ABC")("DEF");
+// Giving the separate argument to the nested function
+// one("ABC")("DEF");
+
+// Spaceless function
+// Spaceless function is a function which does not have any name
+
+
+// let a = function () {
+//     console.log("Hello");
+//     return "Hello";
+// };
+
+// a();
+
+// let b = (a) => {
+//     console.log();
+// };
+
+// b("ABC");
+
+
+
