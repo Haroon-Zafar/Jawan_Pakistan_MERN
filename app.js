@@ -843,13 +843,31 @@
 
 // console.log(abc()); // 6
 
-const arr = [0,1,2,3,4];
+// const arr = [0,1,2,3,4];
 
-const newArray = arr.map(function(index,value){
-    console.log(index*2);
-    return (value*2,index*2); 
-});
+// const newArray = arr.map(function(index,value){
+//     console.log(index*2);
+//     return (value*2,index*2); 
+// });
 
-console.log(newArray); // [ 0, 2, 4, 6, 8 ] 
+// console.log(newArray); // [ 0, 2, 4, 6, 8 ] 
 
 
+//  ############ HIGHER ORDER FUNCTIONS ############
+
+
+// Higher order functions are those functions which take a function as an argument or return a function as an output
+
+
+function one(firstArgument){
+    console.log("Inside one function");
+    console.log(firstArgument);
+}
+
+function second(secondArgument){
+    console.log("Inside second function");
+    return(secondArgument);
+}
+
+
+one(second("Muhammad Harooon Zafar")); // Hello
