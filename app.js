@@ -826,9 +826,25 @@ const arr = ["A", "B", "C", "D", "E"];
 
 // First we have to give the array's name and then we have to give the .map() function
 
-arr.map(function(value, index, array){
-    console.log("Index : ",index, "Value : ",value);
-    // console.log();
-})
+// arr.map(function(value, index, array){
+//     console.log("Index : ",index, "Value : ",value);
+//     // console.log();
+// })
+
+
+// ALL METHODS OF ARRAY CAN ONLY RUN ON AN ARRAY
+
+
+function abc(){
+    console.log("Hello");
+    let a = 5;
+    let b = 6;
+    return a,b;
+}
+
+console.log(abc()); // 6
+
+// THERE CAN ONLY BE ONE ITEM WHICH CAN BE RETURN 
+
 
 
