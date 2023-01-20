@@ -941,3 +941,14 @@
 
 
 
+
+// => is called arrow function
+// Arrow function is a spaceless function
+
+
+let a =(() => {
+    console.log("Hello");
+})();
+
+
+console.log(a());
