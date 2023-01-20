@@ -822,7 +822,6 @@
 // .map() is used to iterate over an array and return a new array
 
 
-const arr = ["A", "B", "C", "D", "E"];
 
 // First we have to give the array's name and then we have to give the .map() function
 
@@ -832,19 +831,25 @@ const arr = ["A", "B", "C", "D", "E"];
 // })
 
 
-// ALL METHODS OF ARRAY CAN ONLY RUN ON AN ARRAY
+// // ALL METHODS OF ARRAY CAN ONLY RUN ON AN ARRAY
 
 
-function abc(){
-    console.log("Hello");
-    let a = 5;
-    let b = 6;
-    return a,b;
-}
+// function abc(){
+//     console.log("Hello");
+//     let a = 5;
+//     let b = 6;
+//     return a,b;
+// }
 
-console.log(abc()); // 6
+// console.log(abc()); // 6
 
-// THERE CAN ONLY BE ONE ITEM WHICH CAN BE RETURN 
+const arr = [0,1,2,3,4];
 
+const newArray = arr.map(function(index,value){
+    console.log(index*2);
+    return (value*2,index*2); 
+});
+
+console.log(newArray); // [ 0, 2, 4, 6, 8 ] 
 
 
