@@ -885,5 +885,6 @@ one(second("Muhammad Harooon Zafar"));
 
 
 // EXAMPLE :
-first(second(second("Muhammad Harooon Zafar")));
-
+one(second(second("Muhammad Harooon Zafar")));
+// Muhammad Harooon Zafar
+// Muhammad Harooon Zafar
