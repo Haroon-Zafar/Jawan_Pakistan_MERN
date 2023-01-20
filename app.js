@@ -860,14 +860,30 @@
 
 
 function one(firstArgument){
-    console.log("Inside one function");
+    // console.log("Inside one function");
     console.log(firstArgument);
 }
 
 function second(secondArgument){
-    console.log("Inside second function");
+    // console.log("Inside second function");
     return(secondArgument);
 }
 
+// EXAMPLE : 
+one(second("Muhammad Harooon Zafar")); 
 
-one(second("Muhammad Harooon Zafar")); // Hello
+// // Inside one function
+// // Inside second function
+// // Muhammad Harooon Zafar
+
+
+// let a = second("Muhammad Harooon Zafar");
+
+// console.log(a); 
+// Inside second function
+// Muhammad Harooon Zafar
+
+
+// EXAMPLE :
+first(second(second("Muhammad Harooon Zafar")));
+
