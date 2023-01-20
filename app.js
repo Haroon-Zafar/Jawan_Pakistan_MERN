@@ -767,17 +767,17 @@
 // Object destructured 
 // Array destructured
 
-let arr = [
-    2,
-    2,
-    3,
-    "abc",
-    "ty",
-    [
-    true,
-    { id: 374, details: [{ id: 1, name: "Abu Bakar", dt: [1, 2, 3, 4, 5] }] },
-    ],
-];
+// let arr = [
+//     2,
+//     2,
+//     3,
+//     "abc",
+//     "ty",
+//     [
+//     true,
+//     { id: 374, details: [{ id: 1, name: "Abu Bakar", dt: [1, 2, 3, 4, 5] }] },
+//     ],
+// ];
 
 
 // let [a, b, c, d, e, [f, { id, details: [{ id: id2, name, dt }] }]] = arr;
@@ -812,13 +812,23 @@ let arr = [
 // Whereas Funciton can be called independently from anywhere 
 
 
+// DIFFERENCE BETWEEN FOREACH AND MAP 
+
+// foreach does not return anything 
+// .map returns a new array
 
 // .map() :
 
 // .map() is used to iterate over an array and return a new array
 
-const array = [1, 2, 3, 4, 5];
 
+const arr = ["A", "B", "C", "D", "E"];
 
+// First we have to give the array's name and then we have to give the .map() function
+
+arr.map(function(value, index, array){
+    console.log("Index : ",index, "Value : ",value);
+    // console.log();
+})
 
 
