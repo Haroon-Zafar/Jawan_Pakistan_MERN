@@ -963,24 +963,30 @@
 
 
 
-// Arrow functions were introduced in ES6.s
+// // Arrow functions were introduced in ES6.s
 
-// second pair of round brackets () are used to call the function and now the function is called and is stored as 
-// a string in a 
-let a =(() => {
-    console.log("Hello");
-})();
+// // second pair of round brackets () are used to call the function and now the function is called and is stored as 
+// // a string in a 
+// let a =(() => {
+//     console.log("Hello");
+// })();
 
-let b = undefined ; 
-// console.log(a);
-// Hello 
+// let b = undefined ; 
+// // console.log(a);
+// // Hello 
 
 
-let c = (b || 0) * 1 - 10;
-console.log(c); // -10
+// let c = (b || 0) * 1 - 10;
+// console.log(c); // -10
 
 // SELF STUDY :
 
 // CLOSURES 
 // DEFAULT PARAMETER
 // LEXICUAL SCOPING 
+
+
+// #### LEXICAL SCOPING ####    
+
+// Lexical Scoping includes the scope outside innerfunction i.e outside function and global scope 
+// Lexical Scoping does not include the scope inside innerfunction i.e inside function
