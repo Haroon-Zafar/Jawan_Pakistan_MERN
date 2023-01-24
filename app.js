@@ -1122,11 +1122,23 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-arr.map((e) => {
-    e = e + "a";
-    console.log(e);
-});
+// arr.map((e) => {
+//     e = e + "a";
+//     console.log(e);
+// });
 
+// map() method relies on immutability.
 // 1a, 2a, 3a, 4a, 5a, 6a, 7a, 8a, 9a, 10a
 
+
+// .map() does not contain any return value then it will return undefined
+
+let arrayOfDotMapFunction = arr.map((e) => {
+    e = e + "a";
+    console.log(e);
+    return (e);
+});
+
+console.log(arrayOfDotMapFunction);
+// it is undefined because map function is not returning anything
 
