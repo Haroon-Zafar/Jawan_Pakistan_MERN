@@ -1133,12 +1133,31 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // .map() does not contain any return value then it will return undefined
 
-let arrayOfDotMapFunction = arr.map((e) => {
-    e = e + "a";
-    console.log(e);
-    return (e);
-});
+// let arrayOfDotMapFunction = arr.map((e) => {
+//     e = e + "a";
+//     console.log(e);
+//     // return (e);
+// });
 
-console.log(arrayOfDotMapFunction);
+// console.log(arrayOfDotMapFunction);
 // it is undefined because map function is not returning anything
 
+
+// // e is the element of the array
+// // i is the index of the array's elements
+// arr.map((e, i) => {
+//     console.log(e, i);
+//     return (e);
+// });
+// arr.map((e) => {
+//         e = e + "a";
+//         console.log(e);
+//         // return (1);
+//     });
+// 
+
+
+
+
+
+// .filter() function 
