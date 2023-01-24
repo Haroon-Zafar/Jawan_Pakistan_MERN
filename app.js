@@ -1053,16 +1053,33 @@
 // scope of a is inside abc function and not outside abc function
 // inside scope is preferred over global scope
 
-let a = "Hello" ; 
-let abc = () =>{
-    // let a = 123;
+// let a = "Hello" ; 
+// let abc = () =>{
+//     // let a = 123;
+//     console.log(a);
+// };
+
+// abc(); // Hello
+// // first it will check the scope of a inside abc function and then it will check the scope of a outside abc function
+
+
+// let a = "Hello" ;
+// let abc = () => {
+//     let a = 123;
+//     console.log(a);
+// };
+
+// abc(); // 123
+
+
+// ########################  DEFAULT PARAMETERS ########################
+
+
+
+let abc = (a = "Default Parameter's value") => {
     console.log(a);
 };
 
-abc(); // Hello
-// first it will check the scope of a inside abc function and then it will check the scope of a outside abc function
-
-
-
-
-
+abc("Hello"); // Hello
+abc(123); // 123
+abc(); // 456
