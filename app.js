@@ -1007,3 +1007,5 @@
 
 // One Liner Function 
 const arr = a => a;
+
+arr(8); // no result is shown because we are not printing it
