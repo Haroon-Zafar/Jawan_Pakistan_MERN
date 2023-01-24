@@ -1261,3 +1261,8 @@ let arr = [
 //     }
 // }).filter(Boolean);
 // console.log(arr2);
+
+
+
+// TASK 
+// porey object ka data jo hai uske har object ke data ko ek array mein daalna hai
