@@ -1109,11 +1109,24 @@
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let a = arr.map(
-    // here e is the element of array
-    (e) => {
-        console.log(e);
-    }
-);
+// forEach is a method which is defined inside an array and it is used to iterate over an array 
+
+// arr.forEach((e) => {
+//     e = e + "a";
+//     console.log(e);
+// });
+
+
+// console.log(arr); 
+// // 1a, 2a, 3a, 4a, 5a, 6a, 7a, 8a, 9a, 10a
+// // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+arr.map((e) => {
+    e = e + "a";
+    console.log(e);
+});
+
+// 1a, 2a, 3a, 4a, 5a, 6a, 7a, 8a, 9a, 10a
 
 
