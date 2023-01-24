@@ -1006,6 +1006,21 @@
 
 
 // One Liner Function 
-const arr = a => a;
+// const arr = a => a;
 
-arr(8); // no result is shown because we are not printing it
+// arr(8); // no result is shown because we are not printing it
+
+
+
+
+
+// ################################# CLASS # 05 #########################################
+
+
+let a = () => {
+    return "Hello";
+};
+
+console.log(a()); // Hello
+
+
