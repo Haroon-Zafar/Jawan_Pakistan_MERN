@@ -1040,15 +1040,29 @@
 // ########################  LEXICAL SCOPING ########################
 
 
-let a = "Hello" ; 
-let abc = () =>{
-    let a = 123;
-    console.log(a);
-};
+// let a = "Hello" ; 
+// let abc = () =>{
+//     let a = 123;
+//     console.log(a);
+// };
 
-abc(); // 123
+// abc(); // 123
 
+// first it will check the scope of a inside abc function and then it will check the scope of a outside abc function
 // why 123 is printed because the scope of a is inside abc function and not outside abc function
 // scope of a is inside abc function and not outside abc function
 // inside scope is preferred over global scope
+
+let a = "Hello" ; 
+let abc = () =>{
+    // let a = 123;
+    console.log(a);
+};
+
+abc(); // Hello
+// first it will check the scope of a inside abc function and then it will check the scope of a outside abc function
+
+
+
+
 
