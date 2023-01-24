@@ -1210,14 +1210,54 @@ let arr = [
 // when we are using round bracket it thinks that we are returning an object
 
 
-let ids = arr.map((elementOfArray) => (
-            {name : elementOfArray.name,
-                category : elementOfArray.id
-            }
-        )
-    );
+// let ids = arr.map((elementOfArray) => (
+//             {name : elementOfArray.name,
+//                 category : elementOfArray.id
+//             }
+//         )
+//     );
 
-console.log(ids);
+// console.log(ids);
 // (3) [Array(1), Array(1), Array(1)]
 // (3) [Array(1), Array(1), Array(1)]0: Array(1)0: {name: 'ALI', category: 1}length: 1[[Prototype]]: Array(0)1: Array(1)0: {name: 'AHMED', category: 2}length: 1[[Prototype]]: Array(0)2: Array(1)0: {name: 'HAROON', category: 3}length: 1[[Prototype]]: Array(0)length: 3[[Prototype]]: Array(0)
 
+// let arr2 = arr.filter((elementOfArray) => {
+//     if (elementOfArray.category == "C") {
+//         elementOfArray.map((elementOfArray) => ({id: elementOfArray.id}));
+//         return elementOfArray;
+//     }
+// });
+// let ids = arr1.map((x) => x.id);
+// console.log(ids);
+
+// let ids = arr1.map((x) => ({
+//     name: x.name,
+//     category: x.category
+// }));
+// console.log(ids);
+// let arr2 = arr1.filter((x) => {
+//     if (x.category == "a") { //    if (x.category == "a" || x.category == "c") {
+//     return
+
+//     }
+// });
+// console.log(arr2);
+
+
+// let arr2 = arr1.filter((x) => {
+//     if (x.category == "a") { //    if (x.category == "a" || x.category == "c") {
+//         return x;;
+
+//     }
+// })
+//     .map((x) => x.id);
+// console.log(arr2);
+
+
+// let arr2 = arr1.map((x) => {
+//     if (x.category == "a") { //    if (x.category == "a" || x.category == "c") {
+//         return x.id;
+
+//     }
+// }).filter(Boolean);
+// console.log(arr2);
