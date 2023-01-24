@@ -1107,7 +1107,7 @@
 
 // functions are called by function name
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // forEach is a method which is defined inside an array and it is used to iterate over an array 
 
@@ -1161,3 +1161,43 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 
 // .filter() function 
+
+// filter returns error and the only that thing which is required by you. 
+
+
+
+let arr = [
+    {
+        id : 1,
+        name : "ALI",
+        category : "A"
+    },
+    {
+        id : 2,
+        name : "AHMED",
+        category : "B"
+    },
+    {
+        id : 3,
+        name : "HAROON",
+        category : "C"
+    }, ];
+
+// // we want only category B and nothing else
+// let arr2 = arr.filter((x) => {
+//     if (x.category == "C")  {
+//         return x;
+//     }
+// });
+
+
+// console.log(arr2);
+
+
+
+// Using forEach() method
+
+// here x is the element of the array
+let ids = arr.map(elementOfArray => elementOfArray.id);
+
+console.log(ids); // [1, 2, 3]
