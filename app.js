@@ -1197,7 +1197,27 @@ let arr = [
 
 // Using forEach() method
 
-// here x is the element of the array
-let ids = arr.map(elementOfArray => elementOfArray.id);
+// // here x is the element of the array
+// let ids = arr.map(elementOfArray => elementOfArray.id);
 
-console.log(ids); // [1, 2, 3]
+// console.log(ids); // [1, 2, 3]
+
+// When we tried to return an object using curly bracket it thinks that we are directly writing on the object
+// object is not returning
+// when we are using curly bracket it thinks that scope is opnen and we are writing on the object
+// we don't want to destroy our object. 
+// let ids = arr.map((elementOfArray) => {name : elementOfArray.name, id, elementOfArray.id});
+// when we are using round bracket it thinks that we are returning an object
+
+
+let ids = arr.map((elementOfArray) => (
+            {name : elementOfArray.name,
+                category : elementOfArray.id
+            }
+        )
+    );
+
+console.log(ids);
+// (3) [Array(1), Array(1), Array(1)]
+// (3) [Array(1), Array(1), Array(1)]0: Array(1)0: {name: 'ALI', category: 1}length: 1[[Prototype]]: Array(0)1: Array(1)0: {name: 'AHMED', category: 2}length: 1[[Prototype]]: Array(0)2: Array(1)0: {name: 'HAROON', category: 3}length: 1[[Prototype]]: Array(0)length: 3[[Prototype]]: Array(0)
+
