@@ -1005,3 +1005,5 @@
 // When a function is called outside it's lexical scope then it is called closure
 
 
+// One Liner Function 
+const arr = a => a;
