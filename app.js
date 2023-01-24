@@ -998,3 +998,10 @@
 //     console.log(a, b);
 // }
 // here a = 5 and b = 6 are default parameters
+
+// CLOSURES 
+
+// Closures are those functions which are defined inside another function and are returned as a value
+// When a function is called outside it's lexical scope then it is called closure
+
+
