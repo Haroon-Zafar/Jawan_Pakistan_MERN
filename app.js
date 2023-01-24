@@ -1076,10 +1076,44 @@
 
 
 
-let abc = (a = "Default Parameter's value") => {
-    console.log(a);
-};
+// let abc = (a = "Default Parameter's value") => {
+//     console.log(a);
+// };
 
-abc("Hello"); // Hello
-abc(123); // 123
-abc(); // 456
+// abc("Hello"); // Hello
+// abc(123); // 123
+// abc(); // 456
+
+
+// function outerFunction(){
+//     let outerVariable = "ABC";
+//     // console.log(outerVariable);
+//     return function(){
+//         let innerVariable = "XYZ";
+//     };
+// };
+// ABC
+// XYZ
+
+
+// METHOD and FUNCTION DIFFERENCE
+// METHOD is a function which is defined inside an object
+// FUNCTION is a function which is defined outside an object
+
+// method always return something
+// return is essential in methods
+// methods are called by object name and dot operator
+// methods are called by using dot operator
+
+// functions are called by function name
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let a = arr.map(
+    // here e is the element of array
+    (e) => {
+        console.log(e);
+    }
+);
+
+
