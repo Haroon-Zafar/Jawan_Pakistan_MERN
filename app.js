@@ -1033,4 +1033,22 @@
 // // console.log(abc()); // Hello
 
 // If we want single parameter then we can write it like this
-let abc = a => "Hello";
+// let abc = a => "Hello";
+
+
+
+// ########################  LEXICAL SCOPING ########################
+
+
+let a = "Hello" ; 
+let abc = () =>{
+    let a = 123;
+    console.log(a);
+};
+
+abc(); // 123
+
+// why 123 is printed because the scope of a is inside abc function and not outside abc function
+// scope of a is inside abc function and not outside abc function
+// inside scope is preferred over global scope
+
