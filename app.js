@@ -1017,10 +1017,16 @@
 // ################################# CLASS # 05 #########################################
 
 
-let a = () => {
-    return "Hello";
-};
+// let a = () => {
+//     return "Hello";
+// };
 
-console.log(a()); // Hello
+// console.log(a()); // Hello
+
+// For One Liner Function we can also write it like this
 
 
+// If we haven't placed curly brackets after this arrow function then it will return the value automatically
+let abc = () => "Hello";
+
+console.log(abc()); // Hello
