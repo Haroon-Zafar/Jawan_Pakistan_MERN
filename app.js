@@ -1027,6 +1027,10 @@
 
 
 // If we haven't placed curly brackets after this arrow function then it will return the value automatically
-let abc = () => "Hello";
+// let abc = () => "Hello";
 
-console.log(abc()); // Hello
+// abc(); // No result is shown because we are not printing it
+// // console.log(abc()); // Hello
+
+// If we want single parameter then we can write it like this
+let abc = a => "Hello";
