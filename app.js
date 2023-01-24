@@ -990,3 +990,11 @@
 
 // Lexical Scoping includes the scope outside innerfunction i.e outside function and global scope 
 // Lexical Scoping does not include the scope inside innerfunction i.e inside function
+
+// Default Parameter 
+// Default parameters are those parameters which are initialized when we don't pass any argument or undefined. 
+
+// function abc(a = 5, b = 6) {
+//     console.log(a, b);
+// }
+// here a = 5 and b = 6 are default parameters
