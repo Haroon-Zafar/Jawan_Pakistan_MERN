@@ -1374,38 +1374,106 @@
 // },
 // ];
 
-let mobiles = [{
-    name: "a30",
-    ram : "4gb",
-    rom : "64gb",
-    camera : "50px",
-    price : 2000,
-}, {
-    name: "note10",
-    ram : "6gb",
-    rom : "128gb",
-    camera : "50px",
-    price : 4000,
-}, {
-    name: "s10",
-    ram : "3gb",
-    rom : "128gb",
-    camera : "10px",
-    price : 5000,
-}, {
-    name: "iphone4",
-    ram : "4gb",
-    rom : "64gb",
-    camera : "50px",
-    price : 10000,
-}, {
-    name: "iphone4s",
-    ram : "4gb",
-    rom : "64gb",
-    camera : "50px",
-    price : 20000,
-},    
+var mobiles = [
+    {
+        name: "a30",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 2000,
+        brand: "samsung"
+    },
+    {
+        name: "note10",
+        ram: "6gb",
+        rom: "128gb",
+        camera: "50px",
+        price: 4000,
+        brand: "samsung"
+    },
+    {
+        name: "s10",
+        ram: "3gb",
+        rom: "128gb",
+        camera: "10px",
+        price: 5000,
+        brand: "samsung"
+    },
+    {
+        name: "iphone4",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 10000,
+        brand: "iphone"
+    },
+    {
+        name: "iphone4s",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 20000,
+        brand: "iphone"
+    },
+    {
+        name: "iphone5",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 30000,
+        brand: "iphone"
+    },
+    {
+        name: "iphone6",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 30000,
+        brand: "iphone"
+    },
+    {
+        name: "redminote10",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 10000,
+        brand: "xiaomi"
+    },
+    {
+        name: "redminote11",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 10000,
+        brand: "xiaomi"
+    },
+    {
+        name: "redmi10",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 10000,
+        brand: "xiaomi"
+    },
+    {
+        name: "redmi10pro",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 10000,
+        brand: "xiaomi"
+    },
+    {
+        name: "a3s",
+        ram: "4gb",
+        rom: "64gb",
+        camera: "50px",
+        price: 10000,
+        brand: "oppo"
+    },
 ];
+ 
+
 
 // let  phoneName ;
 // arr.map(function(value, index, array){
@@ -1429,8 +1497,10 @@ brands = [... new Set(brands)];
 console.log(brands);
 
 let a = document.getElementById("brand");
+let modelSelect = document.getElementById("model");
 
 function init(){
+
     // here forEach is used to iterate over the array
     brands.forEach((x) => {
         // here we are adding the option to the select tag
@@ -1438,11 +1508,28 @@ function init(){
     })
 }
 
+// This function will be called when the brand is selected
 init();
 
-function getBrand(){
-    console.log(a.value);
-    // here we are filtering the mobiles array and returning the models of the selected brand
-    models = mobiles.filter((x)=>x.brand == a.value).map(x=>x.name);
-    console.log(models);
-}
+// function getBrand(){
+
+//     // here we are getting the selected brand
+//     console.log(a.value);
+//     // here we are filtering the mobiles array and returning the models of the selected brand
+//     // x.brand == a.value is the condition to filter the array 
+//     models = mobiles.filter((x)=>x.brand == a.value).map(x=>x.name);
+//     console.log(models);
+
+//     models.forEach((x) => {
+//         modelSelect.innerHTML += `<option>${x}</option>`;
+//     })
+// }
+
+// function find(){
+//     // here we are finding the object of the selected model
+//     // if the brand and model matches then it will return the object
+//     let obj = mobiles.find(x => x.brand == a.value);
+
+//     console.log(obj);
+
+// }
