@@ -1166,22 +1166,22 @@
 
 
 
-let arr = [
-    {
-        id : 1,
-        name : "ALI",
-        category : "A"
-    },
-    {
-        id : 2,
-        name : "AHMED",
-        category : "B"
-    },
-    {
-        id : 3,
-        name : "HAROON",
-        category : "C"
-    }, ];
+// let arr = [
+//     {
+//         id : 1,
+//         name : "ALI",
+//         category : "A"
+//     },
+//     {
+//         id : 2,
+//         name : "AHMED",
+//         category : "B"
+//     },
+//     {
+//         id : 3,
+//         name : "HAROON",
+//         category : "C"
+//     }, ];
 
 // // we want only category B and nothing else
 // let arr2 = arr.filter((x) => {
@@ -1266,3 +1266,183 @@ let arr = [
 
 // TASK 
 // porey object ka data jo hai uske har object ke data ko ek array mein daalna hai
+
+
+// Make dropdown of brands like smasungm apple, nokia, etc
+// SARA DATA OBJECT ME SE NIKALNA HOUGA 
+// arr ka sab se pehle tamam models / brands nikalne hein. ab brands ka array bn jayega. 
+// array mein duplications remove karni hain 
+// newset() ka method unique values mil jayeingi
+
+
+// var arr = [
+//     {
+//     mobiles:{
+//     samsung: {
+//         a30: {
+//         name: "a30",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 2000,
+//         },
+//         note10: {
+//         name: "note10",
+//         ram: "6gb",
+//         rom: "128gb",
+//         camera: "50px",
+//         price: 4000,
+//         },
+//         s10: {
+//         name: "s10",
+//         ram: "3gb",
+//         rom: "128gb",
+//         camera: "10px",
+//         price: 5000,
+//         },
+//     },
+//     iphone: {
+//         iphone4: {
+//         name: "iphone4",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 10000,
+//         },
+//         iphone4s: {
+//         name: "iphone4s",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 20000,
+//         },
+//         iphone5: {
+//         name: "iphone5",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 30000,
+//         },
+//         iphone6: {
+//         name: "iphone6",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 30000,
+//         },
+//     },
+//     xiomi: {
+//         redminote10: {
+//         name: "redminote10",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 10000,
+//         },
+//         redminote11: {
+//         name: "redminote11",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 10000,
+//         },
+//         redmi10: {
+//         name: "redmi10",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 10000,
+//         },
+//         redmi10pro: {
+//         name: "redmi10pro",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 10000,
+//         },
+//     },
+//     oppo: {
+//         a3s: {
+//         name: "a3s",
+//         ram: "4gb",
+//         rom: "64gb",
+//         camera: "50px",
+//         price: 10000,
+//         },
+//     },
+//     },
+// },
+// ];
+
+let mobiles = [{
+    name: "a30",
+    ram : "4gb",
+    rom : "64gb",
+    camera : "50px",
+    price : 2000,
+}, {
+    name: "note10",
+    ram : "6gb",
+    rom : "128gb",
+    camera : "50px",
+    price : 4000,
+}, {
+    name: "s10",
+    ram : "3gb",
+    rom : "128gb",
+    camera : "10px",
+    price : 5000,
+}, {
+    name: "iphone4",
+    ram : "4gb",
+    rom : "64gb",
+    camera : "50px",
+    price : 10000,
+}, {
+    name: "iphone4s",
+    ram : "4gb",
+    rom : "64gb",
+    camera : "50px",
+    price : 20000,
+},    
+];
+
+// let  phoneName ;
+// arr.map(function(value, index, array){
+//     console.log(value.name);
+//     let idName = "option"+index;
+//     console.log(idName);
+//     // document.getElementById(phoneName).innerHTML += `<option id=${idName}>${phoneName}</option>`;
+//     // console.log(value.mobiles[Object.keys(value.mobiles)[index]]);
+//     // Object.keys returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+//     // console.log(Object.keys(value.mobiles));
+// })
+
+// let brands = arr.map((x) => x.brand);
+// // console.log(brands);
+// let uniqueBrands = [... new Set([brands])];
+// console.log(uniqueBrands);
+
+let brands = mobiles.map((x) => x.brand);
+// console.log(brands);
+brands = [... new Set(brands)];
+console.log(brands);
+
+let a = document.getElementById("brand");
+
+function init(){
+    // here forEach is used to iterate over the array
+    brands.forEach((x) => {
+        // here we are adding the option to the select tag
+        a.innerHTML += `<option>${x}</option>`;
+    })
+}
+
+init();
+
+function getBrand(){
+    console.log(a.value);
+    // here we are filtering the mobiles array and returning the models of the selected brand
+    models = mobiles.filter((x)=>x.brand == a.value).map(x=>x.name);
+    console.log(models);
+}
