@@ -1511,25 +1511,25 @@ function init(){
 // This function will be called when the brand is selected
 init();
 
-// function getBrand(){
+function getBrand(){
 
-//     // here we are getting the selected brand
-//     console.log(a.value);
-//     // here we are filtering the mobiles array and returning the models of the selected brand
-//     // x.brand == a.value is the condition to filter the array 
-//     models = mobiles.filter((x)=>x.brand == a.value).map(x=>x.name);
-//     console.log(models);
+    // here we are getting the selected brand
+    console.log(a.value);
+    // here we are filtering the mobiles array and returning the models of the selected brand
+    // x.brand == a.value is the condition to filter the array 
+    models = mobiles.filter((x)=>x.brand == a.value).map(x=>x.name);
+    console.log(models);
 
-//     models.forEach((x) => {
-//         modelSelect.innerHTML += `<option>${x}</option>`;
-//     })
-// }
+    models.forEach((x) => {
+        modelSelect.innerHTML += `<option>${x}</option>`;
+    })
+}
 
-// function find(){
-//     // here we are finding the object of the selected model
-//     // if the brand and model matches then it will return the object
-//     let obj = mobiles.find(x => x.brand == a.value);
+function find(){
+    // here we are finding the object of the selected model
+    // if the brand and model matches then it will return the object
+    let obj = mobiles.find(x => x.brand == a.value);
 
-//     console.log(obj);
+    console.log(obj);
 
-// }
+}
